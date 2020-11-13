@@ -1,0 +1,13 @@
+image: elyra/enterprise-gateway:2.3.0
+
+kernel:
+  shareGatewayNamespace: true
+  # Timeout for kernel launching in seconds.
+  launchTimeout: 300
+  # Timeout for an idle kernel before its culled in seconds. Default is 1 hour.
+  cullIdleTimeout: 3600
+
+
+# Kernel Image Puller (daemonset)
+kip:
+  enabled: false
